@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180720 15:58:58.537" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\julio\Documents\Atom\RobotFramework\tests\TestSiteSelenium.robot" id="s1" name="TestSiteSelenium">
+<test id="s1-t1" name="Caso de teste 01: Pesquisar produto existente">
+<kw type="setup" name="Abrir navegador" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180720 15:58:58.687" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20180720 15:59:00.822" starttime="20180720 15:58:58.686"></status>
+</kw>
+<status status="PASS" endtime="20180720 15:59:00.822" starttime="20180720 15:58:58.686"></status>
+</kw>
+<kw name="Acessar pagina home do site" library="resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com/index.php</arg>
+</arguments>
+<msg timestamp="20180720 15:59:00.824" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" endtime="20180720 15:59:06.188" starttime="20180720 15:59:00.823"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20180720 15:59:06.195" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" endtime="20180720 15:59:06.195" starttime="20180720 15:59:06.188"></status>
+</kw>
+<status status="PASS" endtime="20180720 15:59:06.195" starttime="20180720 15:59:00.823"></status>
+</kw>
+<kw type="teardown" name="Fechar navegador" library="resource">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180720 15:59:08.279" starttime="20180720 15:59:06.196"></status>
+</kw>
+<status status="PASS" endtime="20180720 15:59:08.279" starttime="20180720 15:59:06.195"></status>
+</kw>
+<status status="PASS" endtime="20180720 15:59:08.279" critical="yes" starttime="20180720 15:58:58.685"></status>
+</test>
+<status status="PASS" endtime="20180720 15:59:08.281" starttime="20180720 15:58:58.539"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSiteSelenium" pass="1">TestSiteSelenium</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
